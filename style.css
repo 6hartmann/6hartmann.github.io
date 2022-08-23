@@ -1,0 +1,251 @@
+:root {
+  --black: #4d4c59;
+  --purple: #6c63ff;
+  --light-grey: #c8c8c8;
+  --text-color: #9c9ab6;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-y: hidden;
+}
+
+body .main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+body .main .img-top {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+body .main .img-bottom {
+  position: absolute;
+  bottom: -30px;
+  width: 100%;
+}
+
+body .main .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  grid-column: 1;
+  margin-right: 82px;
+}
+
+body .main .content .title {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.25rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: var(--purple);
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 54px;
+}
+
+body .main .content .container-timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body .main .content .container-timer .timer-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+body .main .content .container-timer .timer-details ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin-top: 20px;
+}
+
+body .main .content .container-timer .timer-details ul li {
+  display: flex;
+  align-items: flex-end;
+}
+
+body .main .content .container-timer .timer-details ul li div .time-text {
+  font-family: "Poppins", sans-serif;
+  color: var(--light-grey);
+  font-weight: 400;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+body .main .content .container-timer .timer-details .days-time,
+.hours-time,
+.minutes-time,
+.seconds-time {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 4.5rem;
+}
+
+body .main .content .container-timer .timer-details ul li span {
+  margin: 0 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 4.5rem;
+}
+
+body .main .content .container-timer .register-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 400;
+  text-align: center;
+  color: var(--text-color);
+}
+
+body .main .content .container-timer .btn {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  background-color: #6c63ff;
+  text-align: center;
+  width: 160px;
+  height: 46px;
+  margin-top: 30px;
+  border-radius: 10px;
+  outline: none;
+  border: 0;
+  color: #ffffff;
+  transition: 0.2s;
+}
+
+body .main .content .container-timer .btn:active {
+  transform: translateY(1px);
+}
+
+body .main .modal-container {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: #00000098;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+body .main .modal-container .form-container {
+  background-color: #fff;
+  padding: 20px;
+  z-index: 3;
+}
+
+body .main .modal-container .form-container h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.25rem;
+  font-weight: 400;
+  color: var(--black);
+}
+
+body .main .modal-container .form-container p {
+  font-family: "Poppins", sans-serif;
+  color: var(--black);
+  font-size: 1rem;
+}
+
+body .main .modal-container .form-container form {
+  margin-top: 20px;
+}
+
+body .main .modal-container .form-container form label {
+  font-family: "Poppins", sans-serif;
+  color: var(--black);
+  font-size: 1rem;
+}
+
+body .main .modal-container .form-container form div {
+  background-color: #0000000c;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+body .main .modal-container .form-container form div i {
+  color: var(--light-grey);
+}
+
+body .main .modal-container .form-container form div input {
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  margin-left: 10px;
+  width: auto;
+}
+
+body .main .modal-container .form-container form div input::placeholder {
+  color: var(--light-grey);
+}
+
+body .main .modal-container .form-container .btn-register {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+body .main .modal-container .form-container .btn-register button {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  border: 0;
+  background-color: var(--purple);
+  color: #ffffff;
+  padding: 10px 30px;
+}
+
+body .main .modal-container .form-container .or {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+body .main .modal-container .form-container .container-button {
+  width: 100%;
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+body .main .modal-container .form-container .container-button button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  padding: 10px 30px;
+  border: 0;
+  background-color: var(--purple);
+  color: #ffffff;
+  width: 150px;
+}
+
+body .main .modal-container .form-container .container-button button i {
+  margin-right: 10px;
+}
+
+body .main .modal-container .form-container .container-button button + button {
+  margin-left: 20px;
+}
+
+body .main .rocket {
+  grid-column: 2;
+  animation: float 1s alternate infinite ease-in-out;
+}
+
+@keyframes float {
+  to {
+    transform: translateY(5px);
+  }
+}
