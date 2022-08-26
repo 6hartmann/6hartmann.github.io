@@ -15,3 +15,5 @@ the project aims to consolidate the way of designing layouts in web programming,
 
 
 Project developed using HTML, CSS and JavaScript
+
+Project hosted on https://otavioescalnte.github.io/countdown-page/
