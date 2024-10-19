@@ -19,15 +19,3 @@ var updateCount = setInterval(() => {
   document.querySelector(".minutes-time").innerHTML = minutes;
   document.querySelector(".seconds-time").innerHTML = seconds;
 });
-
-var modal = document.querySelector(".modal-container");
-var btnRegister = document.querySelector(".btn");
-btnRegister.addEventListener("click", function () {
-  modal.style.display = "flex";
-});
-
-window.addEventListener("click", function (e) {
-  if (e.target === modal) {
-    modal.style.display = "none";
-  }
-});
