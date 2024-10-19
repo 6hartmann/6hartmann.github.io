@@ -1,7 +1,7 @@
 :root {
   --black: #4d4c59;
-  --purple: #6c63ff;
-  --light-grey: #c8c8c8;
+  --purple: #F96800;
+  --light-grey: #444444;
   --text-color: #9c9ab6;
 }
 
@@ -13,6 +13,7 @@
 
 body {
   overflow-y: hidden;
+  background-color: #444444;
 }
 
 body .main {
@@ -58,12 +59,14 @@ body .main .content .container-timer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family:'Courier New', Courier, monospace;
 }
 
 body .main .content .container-timer .timer-details {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  font-family:'Courier New', Courier, monospace;
 }
 
 body .main .content .container-timer .timer-details ul {
@@ -71,6 +74,7 @@ body .main .content .container-timer .timer-details ul {
   justify-content: flex-end;
   list-style: none;
   margin-top: 20px;
+  font-family:'Courier New', Courier, monospace;
 }
 
 body .main .content .container-timer .timer-details ul li {
@@ -79,8 +83,8 @@ body .main .content .container-timer .timer-details ul li {
 }
 
 body .main .content .container-timer .timer-details ul li div .time-text {
-  font-family: "Poppins", sans-serif;
-  color: var(--light-grey);
+  font-family:'Courier New', Courier, monospace;
+  color: #ffffff;
   font-weight: 400;
   font-size: 0.8rem;
   text-align: center;
@@ -90,8 +94,8 @@ body .main .content .container-timer .timer-details .days-time,
 .hours-time,
 .minutes-time,
 .seconds-time {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
+  font-family:'Courier New', Courier, monospace;
+  font-weight: 800;
   font-size: 4.5rem;
 }
 
